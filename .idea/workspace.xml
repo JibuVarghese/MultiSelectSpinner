@@ -16,13 +16,15 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="08fe6335-ddf0-4e74-b364-7a7bdf45ce38" name="Default Changelist" comment="" />
+    <list default="true" id="08fe6335-ddf0-4e74-b364-7a7bdf45ce38" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="192.168.1.57:5555" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="a05642e2" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -219,6 +221,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="Dynamic Change text of Filter Hint &quot;Type Search&quot; and text of &quot;Not Found&quot;" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="359" y="218" width="667" height="486" key="find.popup" timestamp="1617890597844">
+      <screen x="0" y="23" width="1385" height="877" />
+    </state>
+    <state x="359" y="218" width="667" height="486" key="find.popup/0.23.1385.877@0.23.1385.877" timestamp="1617890597844" />
     <state x="357" y="213" width="670" height="676" key="search.everywhere.popup" timestamp="1617889212018">
       <screen x="0" y="23" width="1385" height="877" />
     </state>
@@ -229,37 +235,37 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
           <url>file://$PROJECT_DIR$/library/src/main/java/com/androidbuts/multispinnerfilter/MultiSpinnerSearch.java</url>
-          <line>389</line>
+          <line>391</line>
           <option name="timeStamp" value="7" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
           <url>file://$PROJECT_DIR$/library/src/main/java/com/androidbuts/multispinnerfilter/MultiSpinnerSearch.java</url>
-          <line>391</line>
+          <line>393</line>
           <option name="timeStamp" value="9" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
           <url>file://$PROJECT_DIR$/library/src/main/java/com/androidbuts/multispinnerfilter/MultiSpinnerSearch.java</url>
-          <line>392</line>
+          <line>394</line>
           <option name="timeStamp" value="10" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
           <url>file://$PROJECT_DIR$/library/src/main/java/com/androidbuts/multispinnerfilter/MultiSpinnerSearch.java</url>
-          <line>393</line>
+          <line>395</line>
           <option name="timeStamp" value="11" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
           <url>file://$PROJECT_DIR$/library/src/main/java/com/androidbuts/multispinnerfilter/MultiSpinnerSearch.java</url>
-          <line>394</line>
+          <line>396</line>
           <option name="timeStamp" value="13" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
           <url>file://$PROJECT_DIR$/library/src/main/java/com/androidbuts/multispinnerfilter/MultiSpinnerSearch.java</url>
-          <line>395</line>
+          <line>397</line>
           <option name="timeStamp" value="14" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
           <url>file://$PROJECT_DIR$/library/src/main/java/com/androidbuts/multispinnerfilter/MultiSpinnerSearch.java</url>
-          <line>396</line>
+          <line>398</line>
           <option name="timeStamp" value="15" />
         </line-breakpoint>
       </breakpoints>
