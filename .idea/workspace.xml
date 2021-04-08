@@ -16,9 +16,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="08fe6335-ddf0-4e74-b364-7a7bdf45ce38" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="08fe6335-ddf0-4e74-b364-7a7bdf45ce38" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -235,37 +233,37 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
           <url>file://$PROJECT_DIR$/library/src/main/java/com/androidbuts/multispinnerfilter/MultiSpinnerSearch.java</url>
-          <line>431</line>
+          <line>391</line>
           <option name="timeStamp" value="7" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
           <url>file://$PROJECT_DIR$/library/src/main/java/com/androidbuts/multispinnerfilter/MultiSpinnerSearch.java</url>
-          <line>433</line>
+          <line>393</line>
           <option name="timeStamp" value="9" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
           <url>file://$PROJECT_DIR$/library/src/main/java/com/androidbuts/multispinnerfilter/MultiSpinnerSearch.java</url>
-          <line>434</line>
+          <line>394</line>
           <option name="timeStamp" value="10" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
           <url>file://$PROJECT_DIR$/library/src/main/java/com/androidbuts/multispinnerfilter/MultiSpinnerSearch.java</url>
-          <line>435</line>
+          <line>395</line>
           <option name="timeStamp" value="11" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
           <url>file://$PROJECT_DIR$/library/src/main/java/com/androidbuts/multispinnerfilter/MultiSpinnerSearch.java</url>
-          <line>436</line>
+          <line>396</line>
           <option name="timeStamp" value="13" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
           <url>file://$PROJECT_DIR$/library/src/main/java/com/androidbuts/multispinnerfilter/MultiSpinnerSearch.java</url>
-          <line>437</line>
+          <line>397</line>
           <option name="timeStamp" value="14" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
           <url>file://$PROJECT_DIR$/library/src/main/java/com/androidbuts/multispinnerfilter/MultiSpinnerSearch.java</url>
-          <line>438</line>
+          <line>398</line>
           <option name="timeStamp" value="15" />
         </line-breakpoint>
       </breakpoints>
