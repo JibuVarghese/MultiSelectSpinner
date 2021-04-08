@@ -150,33 +150,35 @@ public class MultiSpinnerSearch extends AppCompatSpinner implements OnCancelList
     @Override
     public void onCancel(DialogInterface dialog) {
         // refresh text on spinner
+        if (dismissWithClear) {
+            StringBuilder spinnerBuffer = new StringBuilder();
 
-        StringBuilder spinnerBuffer = new StringBuilder();
-
-        ArrayList<KeyPairBoolData> selectedData = new ArrayList<>();
-        for (int i = 0; i < items.size(); i++) {
-            KeyPairBoolData currentData = items.get(i);
-            if (currentData.isSelected()) {
-                selectedData.add(currentData);
-                spinnerBuffer.append(currentData.getName());
-                spinnerBuffer.append(", ");
+            ArrayList<KeyPairBoolData> selectedData = new ArrayList<>();
+            for (int i = 0; i < items.size(); i++) {
+                KeyPairBoolData currentData = items.get(i);
+                if (currentData.isSelected()) {
+                    selectedData.add(currentData);
+                    spinnerBuffer.append(currentData.getName());
+                    spinnerBuffer.append(", ");
+                }
             }
-        }
 
-        String spinnerText = spinnerBuffer.toString();
-        if (spinnerText.length() > 2)
-            spinnerText = spinnerText.substring(0, spinnerText.length() - 2);
-        else
-            spinnerText = this.getHintText();
+            String spinnerText = spinnerBuffer.toString();
+            if (spinnerText.length() > 2)
+                spinnerText = spinnerText.substring(0, spinnerText.length() - 2);
+            else
+                spinnerText = this.getHintText();
 
-        ArrayAdapter<String> adapterSpinner = new ArrayAdapter<String>(getContext(), R.layout.textview_for_spinner, new String[]{spinnerText});
-        setAdapter(adapterSpinner);
+            ArrayAdapter<String> adapterSpinner = new ArrayAdapter<String>(getContext(), R.layout.textview_for_spinner, new String[]{spinnerText});
+            setAdapter(adapterSpinner);
 
-        if (adapter != null)
-            adapter.notifyDataSetChanged();
+            if (adapter != null)
+                adapter.notifyDataSetChanged();
 
-        if (dismissWithClear)
             listener.onItemsSelected(selectedData);
+        } else {
+            listener.onCancel();
+        }
 
         /**
          * To hide dropdown which is already opened at the time of performClick...
