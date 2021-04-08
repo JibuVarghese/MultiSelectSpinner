@@ -175,7 +175,8 @@ public class MultiSpinnerSearch extends AppCompatSpinner implements OnCancelList
         if (adapter != null)
             adapter.notifyDataSetChanged();
 
-        listener.onItemsSelected(selectedData);
+        if (dismissWithClear)
+            listener.onItemsSelected(selectedData);
 
         /**
          * To hide dropdown which is already opened at the time of performClick...
