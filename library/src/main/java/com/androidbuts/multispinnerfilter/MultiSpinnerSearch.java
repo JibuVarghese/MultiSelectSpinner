@@ -176,8 +176,6 @@ public class MultiSpinnerSearch extends AppCompatSpinner implements OnCancelList
                 adapter.notifyDataSetChanged();
 
             listener.onItemsSelected(selectedData);
-        } else {
-            listener.onCancel();
         }
 
         /**
@@ -264,46 +262,6 @@ public class MultiSpinnerSearch extends AppCompatSpinner implements OnCancelList
 
         builder.setPositiveButton(android.R.string.ok, (dialog, which) -> {
             //Log.i(TAG, " ITEMS : " + items.size());
-            if (!dismissWithClear) {
-                // refresh text on spinner
-                StringBuilder spinnerBuffer = new StringBuilder();
-
-                ArrayList<KeyPairBoolData> selectedData = new ArrayList<>();
-                for (int i = 0; i < items.size(); i++) {
-                    KeyPairBoolData currentData = items.get(i);
-                    if (currentData.isSelected()) {
-                        selectedData.add(currentData);
-                        spinnerBuffer.append(currentData.getName());
-                        spinnerBuffer.append(", ");
-                    }
-                }
-
-                String spinnerText = spinnerBuffer.toString();
-                if (spinnerText.length() > 2)
-                    spinnerText = spinnerText.substring(0, spinnerText.length() - 2);
-                else
-                    spinnerText = this.getHintText();
-
-                ArrayAdapter<String> adapterSpinner = new ArrayAdapter<String>(getContext(), R.layout.textview_for_spinner, new String[]{spinnerText});
-                setAdapter(adapterSpinner);
-
-                if (adapter != null)
-                    adapter.notifyDataSetChanged();
-
-                listener.onItemsSelected(selectedData);
-
-                /**
-                 * To hide dropdown which is already opened at the time of performClick...
-                 * This code will hide automatically and no need to tap by user.
-                 */
-                new Thread(new Runnable() {
-                    @Override
-                    public void run() {
-                        Instrumentation inst = new Instrumentation();
-                        inst.sendKeyDownUpSync(KeyEvent.KEYCODE_BACK);
-                    }
-                }).start();
-            }
             dialog.cancel();
         });
 
@@ -316,6 +274,8 @@ public class MultiSpinnerSearch extends AppCompatSpinner implements OnCancelList
                         adapter.arrayList.get(i).setSelected(false);
                     }
                     adapter.notifyDataSetChanged();
+                }else {
+                    listener.onCancel();
                 }
                 dialog.cancel();
             }
